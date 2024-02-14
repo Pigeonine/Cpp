@@ -68,12 +68,15 @@ int main() {
     {
         cin >> temp; arrs.push_back(temp);
     }   
+    long long height = ceil(log2(n));
+    trees.resize((1<<(height+1))+1);
+    init(arrs,trees, 1, 0, n-1);
     for(int i = 0; i < m+k; i++)
     {
         cin >> a >> b >> c;
         if(a == 1)
         {
-            update(arrs, trees, n-1, b-1, c);
+            update(arrs, trees, n, b-1, c);
         }
         else if(a ==2) {
             cout << calc(arrs, trees, 1, 0, n-1, b-1, c-1) << "\n";

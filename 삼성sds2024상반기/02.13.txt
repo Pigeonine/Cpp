@@ -1,0 +1,9 @@
+stack 및 queue구현
+dfs와 bfs
+정렬, 투포인터, 
+
+3425 고스택: 곱하기 연산시 피연산자가 int이면 overflow 날 수 있던 것 조심
+3055 탈출: BFS 사용
+1062 가르침: 힌트 본 후 비트마스킹 + 브루트 포스로 풀어냄, 조합 사용하는데 prev_permutation 사용, 이후 DFS사용해서 조합 만들어보기
+7453 합이 0인 네 정수: 마찬가지로 int overflow 조심
+1713 후보 추천: struct 이용 + sort 활용
