@@ -18,6 +18,6 @@ int main() {
     }
 
 
-    if(counts >= n) cout << 1;
+    if(counts >= k) cout << 1;
     else cout << 0;
 }
