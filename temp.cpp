@@ -3,14 +3,20 @@
 
 using namespace std;
 
+
 int main() {
     fastio;
     int n; cin >> n;
-    long long fir = 0, sec = 1;
-    for(int i = 0; i < n-1; i++)
+    if(n == 0) cout << 1;
+    else if(n < 0) cout << 32;
+    else
     {
-        long long temp = sec;
-        sec += fir; fir = temp;
+        int res = 0;
+        while(n > 0)
+        {
+            res++; n /= 2;
+        }
+        cout << res;
     }
-    cout << sec;
+    
 }
