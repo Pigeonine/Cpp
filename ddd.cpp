@@ -3,10 +3,11 @@
 
 using namespace std;
 
-bool arrs[10][10]{};
-bool arrd[10][10]{};
 
 int main() {
     fastio;
-    cout << arrs == arrd;
+    int n; cin >> n;
+    cout << 4 * sqrt(n * 2);
+
+
 }

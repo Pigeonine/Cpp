@@ -6,7 +6,7 @@ int parent(int *parent_array, const int &target)
 
 void init(int *parent_array, int n)
 {
-    for(int i = 0; i < n; i++) parent_array[i] = i;
+    for(int i = 1; i <= n; i++) parent_array[i] = i;
 }
 
 void uni(int *parent_array, const int &a, const int &b)

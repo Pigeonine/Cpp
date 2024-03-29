@@ -8,7 +8,7 @@ int parent(const int &target)
 
 void init(const int &n)
 {
-    for(int i = 0; i < n; i++) parray[i] = i;
+    for(int i = 1; i <= n; i++) parray[i] = i;
 }
 
 void uni(const int &a, const int &b)
