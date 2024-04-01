@@ -90,7 +90,8 @@
         "stacktrace": "cpp",
         "stdfloat": "cpp",
         "stop_token": "cpp",
-        "syncstream": "cpp"
+        "syncstream": "cpp",
+        "quick_sort": "c"
     },
     "cph.general.defaultLanguage": "cpp"
 }

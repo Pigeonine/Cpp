@@ -3,20 +3,26 @@
 
 using namespace std;
 
+int n, arrs[1001],maxd, ind;
+bool checked[1001];
+
 
 int main() {
     fastio;
-    int n; cin >> n;
-    if(n == 0) cout << 1;
-    else if(n < 0) cout << 32;
-    else
+    cin >> n;
+    for(int i = 1; i <= n; i++) cin >> arrs[i];
+    for(int i = 1; i <= n; i++)
     {
-        int res = 0;
-        while(n > 0)
+        fill(checked+1,checked+n+1, false);
+        checked[i] = true;
+        int s = 1, next = arrs[i];
+        while(true)
         {
-            res++; n /= 2;
+            if(checked[next]) break;
+            
+            s++; checked[next] = true; next = arrs[next];
         }
-        cout << res;
+        if(maxd < s) {maxd = s; ind = i;}
     }
-    
+    cout << ind;
 }
